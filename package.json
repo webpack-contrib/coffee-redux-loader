@@ -1,0 +1,22 @@
+{
+	"name": "coffee-redux-loader",
+	"version": "0.6.0",
+	"author": "Tobias Koppers @sokra",
+	"description": "coffee redux loader module for webpack",
+	"dependencies": {
+		"coffee-script-redux": "2.0.x",
+		"loader-utils": "0.2.x"
+	},
+	"devDependencies": {
+		"webpack": "0.10.x"
+	},
+	"scripts": {
+		"test": "webpack test/cup.coffee test/cup.js --target node --module-bind coffee=./index.js && node test/cup"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://www.opensource.org/licenses/mit-license.php"
+		}
+	]
+}
