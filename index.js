@@ -10,7 +10,7 @@ module.exports = function(source) {
 	var jsRequest = loaderUtils.getCurrentRequest(this);
 	var csAst = coffee.parse(source, {
 		bare: true,
-		// raw: true,
+		raw: true,
 		optimise: true
 	});
 	var jsAst = coffee.compile(csAst, {
@@ -21,10 +21,11 @@ module.exports = function(source) {
 			"exports", 
 			"define", 
 			"__webpack_modules__",
-			"__webpack_require__"
+			"__webpack_require__",
+			"__non_webpack_require__"
 		]
 	});
-	var result = coffee.jsWithSourceMap(jsAst, jsRequest);
+	var result = coffee.jsWithSourceMap(jsAst, coffeeRequest);
 	result.map.setSourceContent(coffeeRequest, source);
 	this.callback(null, result.code, result.map.toJSON());
 }
