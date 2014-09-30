@@ -4,7 +4,7 @@
 	"author": "Tobias Koppers @sokra",
 	"description": "coffee redux loader module for webpack",
 	"dependencies": {
-		"coffee-script-redux": "2.0.x",
+		"coffee-script-redux": ">=2.0.0-beta0 <2.1.0",
 		"loader-utils": "0.2.x"
 	},
 	"devDependencies": {
