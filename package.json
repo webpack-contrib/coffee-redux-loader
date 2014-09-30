@@ -5,10 +5,10 @@
 	"description": "coffee redux loader module for webpack",
 	"dependencies": {
 		"coffee-script-redux": ">=2.0.0-beta0 <2.1.0",
-		"loader-utils": "0.2.x"
+		"loader-utils": "~0.2.2"
 	},
 	"devDependencies": {
-		"webpack": "0.10.x"
+		"webpack": "^1.0.0"
 	},
 	"scripts": {
 		"test": "webpack test/cup.coffee test/cup.js --target node --module-bind coffee=./index.js && node test/cup"
