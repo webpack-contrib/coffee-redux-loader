@@ -3,7 +3,7 @@
 ## Usage
 
 ``` javascript
-var exportsOfFile = require("coffee-redux!./file.coffee");
+var exportsOfFile = require("coffee-redux-loader!./file.coffee");
 // => return exports of executed and compiled file.coffee
 ```
 
